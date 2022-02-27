@@ -84,7 +84,6 @@ export default function Home() {
           
       }
           
-
     }
 
     const handleClose = (e,reason) => {
@@ -92,17 +91,8 @@ export default function Home() {
         return;
       }
       
-     
-      if (!uppercase && !lowercase && !numbers && !symbols){
-        setOpen({snackbr: false, snaName: 'Need to select atleast one option',severitymsg: 'error'})
-      }
-      else if(password === ''){
-        setOpen({snackbr: false, snaName: 'Empty',severitymsg: 'error'});
-      }
-      else {
-        setOpen({snackbr: false, snaName: 'Copied to Clipboard',severitymsg: 'success'});
-      }
-
+      setOpen({snackbr: false,snaName: open.snaName,
+      severitymsg: open.severitymsg})
       
     };
 
@@ -111,11 +101,9 @@ export default function Home() {
         textAlign: 'center',
         padding: '10px',
         margin: '50px',
-        //textAlign: 'center'
       }}>Password Generator</h1>
 
       <div style={{
-        //marginLeft: '580px',
         marginTop: '50px',
         background: 'white',
         width: '900px',

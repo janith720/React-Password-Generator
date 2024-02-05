@@ -12,9 +12,13 @@ This project is a user-friendly and customizable password generator that allows 
   Random Password Generation\
   Copy to Clipboard
 
-  ## User Interface
+## User Interface
 
   ![image](https://github.com/janith720/React-Password-Generator/assets/85020879/d1aa22bc-932e-49bc-b488-8b7ba494a9f0)
+
+## Project
+
+https://random-pass-gen-app.netlify.app/
 
   
   
